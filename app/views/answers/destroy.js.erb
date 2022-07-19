@@ -1,0 +1,7 @@
+ <% answer_id = ".answer-#{@answer.id}" %>
+ $('<%= answer_id %>').remove();
+ $('.answers').html('<%= notice %>');
+function clean(){
+  $(".answers").empty()
+}
+setTimeout(clean, 3000);

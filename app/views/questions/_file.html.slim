@@ -1,0 +1,6 @@
+/вывод тела прикрепленного файла
+- if question.files.attached?
+  - question.files.each do |file|
+    div class="file-#{file.id}"
+      p= link_to file.filename.to_s, url_for(file)
+      = link_to "Delete this file", attachment_path(file), method: :delete, remote: true

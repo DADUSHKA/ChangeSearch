@@ -1,0 +1,16 @@
+p class="notice"
+  = notice
+- if question.persisted?
+  div class="question-error-#{question.id}"
+    = render 'shared/errors', resource: @question
+  /вывод тела вопроса
+  div class="question-#{question.id}"
+    = link_to question.title, question_path(question), class: 'question-title'
+    br
+    /форма редактирования вопроса
+    p = 'Question with the reward!' if question.award.present?
+    - if current_user&.author_of?(question)
+      = link_to 'Edit question', '', class: 'edit-question-link', data: { question_id: question.id }
+      = render "form", question: question
+
+

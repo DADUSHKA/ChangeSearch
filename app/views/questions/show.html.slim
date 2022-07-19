@@ -1,0 +1,21 @@
+= link_to 'Back to questions', questions_path
+
+.subscribe
+  - if @question.subscribed?(current_user)
+    = link_to 'Unsubscribe', subscription_path(@subscription), method: :delete, cass: 'unsubscribe-question-link'
+  - else
+    = link_to 'Subscribe', question_subscriptions_path(@question), method: :post, class: 'subscribe-question-link'
+
+-cache @question do
+  h1 Question Show
+  .question
+    = render 'questions_show', resource: @question
+
+  p Answers:
+  .answers
+    ol
+      = render @question.answers
+
+- if can?(:create, Answer)
+  = render template: "answers/new"
+
