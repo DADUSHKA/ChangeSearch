@@ -18,7 +18,7 @@ set :rail_env, :production
    keys: %w(/home/vicstor/.ssh/id_rsa),
    forward_agent: true,
    auth_methods: %w(publickey password),
-   port: 1705
+   port: 2222
  }
 #
 # The server-based syntax can be used to override options:

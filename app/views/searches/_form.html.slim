@@ -5,6 +5,3 @@
           include_blank: 'Queston'
     = text_field_tag :query, params[:query]
     = submit_tag 'Search', class: "edit_button"
-    = select_tag :type,
-            options_for_select(Services::Search::TYPES, params[:type]),
-            include_blank: 'Queston'

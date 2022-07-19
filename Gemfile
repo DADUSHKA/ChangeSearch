@@ -23,7 +23,7 @@ gem "devise"
 gem "doorkeeper"
 gem "gon"
 gem "jquery-rails"
-gem 'materialize-sass'
+gem "materialize-sass"
 gem "mini_racer"
 gem "oj"
 gem "omniauth", "~> 1.6"

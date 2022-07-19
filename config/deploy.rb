@@ -4,7 +4,6 @@ lock "~> 3.16.0"
 set :application, "think"
 set :repo_url, "git@github.com:DADUSHKA/ChangeSearch.git"
 
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -40,4 +39,4 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
-after "deploy:publishing", "unicorn:restart"
+# after "deploy:publishing", "unicorn:restart"
