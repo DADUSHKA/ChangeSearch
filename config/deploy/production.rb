@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "82.146.40.13", user: "deployer", roles: %w{app db web}, primary: true
+server "185.104.248.240", user: "deployer", roles: %w{app db web}, primary: true
 set :rail_env, :production
 
 # Custom SSH Options
@@ -18,7 +18,7 @@ set :rail_env, :production
    keys: %w(/home/vicstor/.ssh/id_rsa),
    forward_agent: true,
    auth_methods: %w(publickey password),
-   port: 1705
+   port: 2222
  }
 #
 # The server-based syntax can be used to override options:
