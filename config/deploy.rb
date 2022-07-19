@@ -2,7 +2,8 @@
 lock "~> 3.16.0"
 
 set :application, "think"
-set :repo_url, "git@github.com:DADUSHKA/third_part_course.git"
+set :repo_url, "git@github.com:DADUSHKA/ChangeSearch.git"
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
