@@ -6,13 +6,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.6.0"
 
 gem "bootsnap", ">= 1.1.0", require: false
+gem "bootstrap-sass", "~> 3.4.1"
+gem "bootswatch-rails"
 gem "coffee-rails", "~> 4.2"
 gem "dotenv-rails"
 gem "jbuilder", "~> 2.5"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
-gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 # Gems set in hand
@@ -31,6 +32,7 @@ gem "omniauth-facebook"
 gem "omniauth-github", "~> 1.1"
 gem "pg_search"
 gem "redis-rails"
+gem "sassc-rails", ">= 2.1.0"
 gem "select2-rails"
 gem "sidekiq"
 gem "sinatra", require: false

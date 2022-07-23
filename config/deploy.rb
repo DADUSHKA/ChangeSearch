@@ -10,6 +10,7 @@ set :repo_url, "git@github.com:DADUSHKA/ChangeSearch.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deployer/think"
 set :deploy_user, "deployer"
+set :bundle_jobs, 1
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
